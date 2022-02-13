@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MaterialTarjetaComponent } from './components/material-tarjeta/material-tarjeta.component';
 import { MaterialGeneralComponent } from './components/material-general/material-general.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     HomeComponent,
     MaterialTarjetaComponent,
     MaterialGeneralComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
