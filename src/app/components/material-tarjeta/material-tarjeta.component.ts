@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Material } from '../models/material.model';
+import { MaterialService } from '../../services/material-service.service';
+
 
 @Component({
   selector: 'app-material-tarjeta',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialTarjetaComponent implements OnInit {
 
-  constructor() { }
+  materiales : Material []=[];
+@Input() material: any = {};
+@Input() index: number = 0;
+materialesEncontrados: number= 0;
+ampliarInfo: boolean = false;
+
+  constructor(
+    private materialService: MaterialService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  mostrarInfo(){
+    this.material = this.materialService.getMateriales();
   }
 
 }
