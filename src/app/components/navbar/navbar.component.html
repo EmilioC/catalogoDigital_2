@@ -1,1 +1,9 @@
-<p>navbar works!</p>
+<div class="navbar navbar-expand-sm navbar-light bg-light">
+    <h1>NAVBAR</h1>
+    <img [routerLink]="['materiales']" class="m-2" src="assets/img/carburos-logo.png" alt="" width="120" height="36">
+    <button [routerLink]="['home']" class="btn btn-outline-success" type="button">Home</button>
+    <button [routerLink]="['materiales']" class="btn btn-outline-success" type="button">Materiales</button>
+    <button [routerLink]="['buscador']" class="btn btn-outline-success" type="button">Buscador</button>
+    <input class="form-control ml-auto me-2" type="search" placeholder="Buscar en catálogo digital ..." aria-label="Search">
+
+</div>
