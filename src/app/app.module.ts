@@ -9,6 +9,7 @@ import { MaterialTarjetaComponent } from './components/material-tarjeta/material
 import { MaterialGeneralComponent } from './components/material-general/material-general.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MaterialTarjetaComponent,
     MaterialGeneralComponent,
     BuscadorComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

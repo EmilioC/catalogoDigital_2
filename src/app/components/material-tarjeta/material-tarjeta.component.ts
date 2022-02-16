@@ -24,7 +24,7 @@ ampliarInfo: boolean = false;
   }
 
   mostrarInfo(){
-    this.material = this.materialService.getMateriales();
+    this.ampliarInfo = !this.ampliarInfo;
   }
 
 }

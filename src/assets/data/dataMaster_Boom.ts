@@ -1,4 +1,4 @@
-import { Material } from "src/app/models/material.model";
+import { Material } from 'src/app/components/models/material.model';
 
 export const DATA : Material []= [
     {
