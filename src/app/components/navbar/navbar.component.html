@@ -1,6 +1,6 @@
 <div [routerLink]="['materiales']" class="navbar navbar-expand-sm navbar-light bg-light">
     <img [routerLink]="['materiales']" class="m-2" src="assets/img/carburos-logo.png" alt="" width="120" height="36">
-    <input class="form-control ml-auto me-2" type="search" placeholder="Buscar en catálogo digital ..." aria-label="Search" #buscarTexto>
+    <input class="form-control ml-auto me-2" type="search" placeholder="Buscar en catálogo digital ..." (keyup)="buscarMaterial(buscarTexto.value)" aria-label="Search" #buscarTexto>
 </div>
 
 <!-- <div class="row">

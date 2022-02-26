@@ -6,7 +6,7 @@ import { Material } from '../components/models/material.model';
 @Injectable({
   providedIn: 'root'
 })
-export class MaterialService{
+export class MaterialService {
 
   private materiales : Material[]=[];
   materialesEncontrados: number =0;
