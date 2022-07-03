@@ -8,8 +8,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'materiales', component: MaterialGeneralComponent },
-  { path: 'buscador', component: BuscadorComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home'}
+  { path: 'buscar/:termino', component: BuscadorComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'materiales'}
 
 ];
 

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MaterialService } from '../../services/material-service.service';
+import { Material } from '../models/material.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',
@@ -7,9 +11,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscadorComponent implements OnInit {
 
-  constructor() { }
+  materiales: Material []=[];
+  materialesEncontrados: number= 0;
+
+
+  constructor(
+    private activateRoute: ActivatedRoute,
+    private _materialService: MaterialService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.activateRoute.params.subscribe( params =>{
+      this.materiales = this._materialService.buscarMateriales(params['termino']);
+      this.materialesEncontrados = this._materialService.getMaterialesEncontrados();
+    })
   }
+  verMaterial(idx: number){
+    this.router.navigate(['/material',idx]
 
+    )}
 }

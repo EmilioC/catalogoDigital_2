@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+.v0_1 {
+    background-color: #d11d1d;
+    animation-duration: 0.1s;
+}
+
+.v0_2 {
+    background-color: #80ff00;
+    animation-duration: 0.2s;
+}
+
+.v0_3 {
+    background-color: #00c8ff;
+    animation-duration: 0.3s;
+}
+
+.v0_4 {
+    background-color: #f100fe;
+    animation-duration: 0.4s;
+}
+
+.v0_5 {
+    background-color: #e66f6f;
+    animation-duration: 0.5s;
+}
+
+.v0_6 {
+    background-color: #fffefe;
+    animation-duration: 0.6s;
+}
+
+.v0_7 {
+    background-color: #d11d1d;
+    animation-duration: 0.7s;
+}
+
+.v0_10 {
+    background-color: #ffffffa1;
+    animation-duration: 1s;
+}
+
+.v0_17 {
+    background-color: #908e8e;
+    animation-duration: 4s;
+}

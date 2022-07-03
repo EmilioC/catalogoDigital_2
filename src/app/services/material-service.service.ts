@@ -374,5 +374,8 @@ export class MaterialService {
       this.materialesEncontrados = materialesArr.length;
       return materialesArr;
   }
+  getMaterialesEncontrados(){
+    return this.materialesEncontrados;
+  }
 
 }

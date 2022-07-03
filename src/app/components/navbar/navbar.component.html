@@ -1,7 +1,40 @@
+<!-- <div [routerLink]="['materiales']" class="navbar navbar-expand-sm navbar-light bg-light"> -->
+<div class="navbar navbar-expand-sm navbar-light bg-light">
+
+    <!-- <div class="dropdown navbar-expand-sm navbar-light bg-light m-2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+            <li>
+                <div class="spinner-grow text-success v0_7" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                        <small class="text-light center">prueba</small>
+                    </div>
+                </div>
+            </li>
+            <li><a class="dropdown-item" [routerLink]="['materiales']">Juntas</a></li>
+            <li><a class="dropdown-item" [routerLink]="['materiales']">Paneles</a></li>
+            <li><a class="dropdown-item" [routerLink]="['materiales']">Hidrógeno</a></li>
+            <li><a class="dropdown-item" [routerLink]="['materiales']">CO2</a></li>
+        </ul>
+    </div> -->
+
+    <img [routerLink]="['materiales']" class="m-2" src="assets/img/carburos-logo.png" alt="" width="120" height="36">
+    <input class="form-control ml-auto me-2" type="search" placeholder="Buscar en catálogo digital ..." (keyup)="buscarMaterial(buscarTexto.value)" aria-label="Search" #buscarTexto>
+
+</div>
+
+
+<!-- NAV ORIGINAL
 <div [routerLink]="['materiales']" class="navbar navbar-expand-sm navbar-light bg-light">
     <img [routerLink]="['materiales']" class="m-2" src="assets/img/carburos-logo.png" alt="" width="120" height="36">
     <input class="form-control ml-auto me-2" type="search" placeholder="Buscar en catálogo digital ..." (keyup)="buscarMaterial(buscarTexto.value)" aria-label="Search" #buscarTexto>
-</div>
+</div> -->
+
 
 <!-- <div class="row">
         <div class="col-2 m-2">
